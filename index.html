@@ -1,0 +1,38 @@
+<!doctype html>
+<!--
+  index.html
+  Purpose: Main page with the animated motion "Play" button.
+  Notes: This page uses the shared stylesheet `style.css` and links to other pages
+  (level1.html, gameon.html, gameover.html). Hover the button to see the animation.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to main stylesheet (ensure filename matches) -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Animated Motion Button — Play</title>
+  </head>
+  <body>
+
+    <!-- Main animated button. Clicking "Play" will navigate to level1.html -->
+    <a href="level1.html" class="button" aria-label="Play">
+      <!-- Visible text on the button -->
+      <span class="button__text"> play </span>
+      <!-- Decorative geometric images positioned absolutely by CSS -->
+      <img src="img/cone.png" alt="cone" class="button__cone" />
+      <img src="img/torus.png" alt="torus" class="button__torus" />
+      <img src="img/icosahedron.png" alt="icosahedron" class="button__icosahedron" />
+      <img src="img/sphere.png" alt="sphere" class="button__sphere" />
+    </a>
+
+    <!-- Small footer navigation for quick testing of other pages -->
+    <nav class="nav-sample">
+      <a href="level1.html">Level 1</a>
+      <a href="gameon.html">Game On</a>
+      <a href="gameover.html">Game Over</a>
+    </nav>
+
+  </body>
+</html>
